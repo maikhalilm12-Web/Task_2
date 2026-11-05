@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لغة CSS ولمسات الجمال - Task 2</title>
+  <style>
+    /*  css */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.8;
+      color: #1e293b;
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #0f172a;
+      border-bottom: 3px solid #2563eb;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #1e40af;
+      border-right: 4px solid #2563eb;
+      padding-right: 10px;
+      margin-top: 30px;
+    }
+
+    h3 {
+      color: #334155;
+    }
+
+    .student-info {
+      background-color: #eff6ff;
+      border: 1px solid #bfdbfe;
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+
+    .student-info p {
+      margin: 5px 0;
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      max-width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th,
+    td {
+      border: 1px solid #cbd5e1;
+      padding: 12px;
+      text-align: right;
+    }
+
+    th {
+      background-color: #f1f5f9;
+      color: #0f172a;
+    }
+
+    code {
+      background-color: #0f172a;
+      color: #38bdf8;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      direction: ltr;
+      display: inline-block;
+    }
+
+    pre {
+      background-color: #0f172a;
+      color: #38bdf8;
+      padding: 15px;
+      border-radius: 8px;
+      direction: ltr;
+      text-align: left;
+      overflow-x: auto;
+    }
+
+    ul {
+      padding-right: 25px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- الترويسة والعنوان الرئيسي -->
+    <header>
+      <h1>لغة CSS ولمسات الجمال</h1>
+    </header>
+
+    <!-- بيانات الطالب -->
+    <section class="student-info">
+      <p><strong>اسم الطالب:</strong> مي خليل محمد العطافي خليل</p>
+      <p><strong>الرقم الجامعي:</strong> 20502675</p>
+      <p><strong>المقرر:</strong> تطبيقات الإنترنت والمنصات الإلكترونية</p>
+      <p><strong>التاريخ:</strong> 2026-11-01</p>
+    </section>
+
+    <!-- صورة تعبيرية عن موضوع التقرير -->
+    <section>
+      <img src="css.jpg" alt="صورة توضيحية لـ CSS والتصميم البصري لصفحات الويب" />
+    </section>
+
+    <!-- 1. المقدمة -->
+    <section>
+      <h2>المقدمة</h2>
+      <p>
+        عند فتح أي موقع إلكتروني، فإن أول ما يلفت انتباهنا ليس النصوص نفسها،
+        بل <strong>الألوان والخطوط وطريقة ترتيب العناصر</strong> على الشاشة.
+        هذا الجانب البصري تتولاه لغة <b>CSS</b>، وهي اختصار لعبارة
+        <strong>Cascading Style Sheets</strong> أي
+        <i>"أوراق الأنماط المتتالية"</i>.
+      </p>
+      <p>
+        تعمل لغة <b>HTML</b> على بناء هيكل الصفحة ومحتواها، مثل العناوين
+        والفقرات والصور والروابط، بينما تتولى <b>CSS</b> مهمة تنسيق هذا
+        المحتوى وتجميله. ويمكن تشبيه ذلك بالبيت: فـ HTML هي الجدران والغرف، و
+        CSS هي الدهان والأثاث والإضاءة التي تجعل البيت مريحاً وجميلاً.
+      </p>
+      <p>
+        تكمن أهمية <b>CSS</b> في أنها تفصل بين المحتوى والتصميم، مما يسهل
+        تعديل شكل الموقع بالكامل دون المساس بمحتواه، كما تساعد على توحيد مظهر
+        الصفحات، وتحسين تجربة المستخدم، وجعل المواقع تعمل بشكل جيد على مختلف
+        الأجهزة.
+      </p>
+    </section>
+
+    <!-- 2. عرض الموضوع -->
+    <section>
+      <h2>عرض الموضوع</h2>
+
+      <h3>أولاً: بنية قاعدة CSS</h3>
+      <p>تتكون أي قاعدة في <b>CSS</b> من ثلاثة أجزاء رئيسية:</p>
+      <ul>
+        <li>
+          <strong>المحدد (Selector):</strong> يحدد العنصر المراد تنسيقه، مثل
+          العنوان <code>h1</code> أو الفقرة <code>p</code>.
+        </li>
+        <li>
+          <strong>الخاصية (Property):</strong> تحدد ما سيتم تغييره، مثل اللون
+          <code>color</code> أو حجم الخط <code>font-size</code>.
+        </li>
+        <li>
+          <strong>القيمة (Value):</strong> تحدد قيمة التغيير، مثل
+          <code>red</code> أو <code>20px</code>.
+        </li>
+      </ul>
+      <p><strong>مثال بسيط:</strong></p>
+      <pre>
+        h1 {
+          color: darkblue;
+          font-size: 32px;
+        }
+      </pre>
+
+      <h3>ثانياً: طرق إضافة CSS إلى صفحة الويب</h3>
+      <p>
+        هناك ثلاث طرق أساسية لربط التنسيقات بصفحة الويب موضحة في الجدول
+        التالي:
+      </p>
+
+      <!-- جدول المقارنة -->
+      <table>
+        <thead>
+          <tr>
+            <th>طريقة التنسيق</th>
+            <th>مكان الكتابة</th>
+            <!-- <th>الاستخدام الأفضل</th> -->
+            <th>المميزات والسلبيات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>التنسيق المضمن (Inline)</strong></td>
+            <td>داخل الخاصية <code>style</code> في وسم HTML نفسه.</td>
+            <!-- <td>التعديلات السريعة والتجريب.</td> -->
+            <td>يعيبها صعوبة الصيانة وتداخل الأكواد.</td>
+          </tr>
+          <tr>
+            <td><strong>التنسيق الداخلي (Internal)</strong></td>
+            <td>
+              داخل وسم <code>&lt;style&gt;</code> في رأس الصفحة
+              <code>&lt;head&gt;</code>.
+            </td>
+            <!-- <td>الصفحات المنفردة أو المستقلة.</td> -->
+            <td>جيدة لصفحة واحدة ولكن لا تفيد عدة صفحات.</td>
+          </tr>
+          <tr>
+            <td><strong>التنسيق الخارجي (External)</strong></td>
+            <td>
+              في ملف مستقل بامتداد <code>.css</code> يُربط بوسم
+              <code>&lt;link&gt;</code>.
+            </td>
+            <!-- <td>المشاريع الكاملة والمواقع متعددة الصفحات.</td> -->
+            <td>
+              <strong>الطريقة الأفضل:</strong> تفصل التصميم وتسهل الصيانة.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>ثالثاً: التحكم في الألوان</h3>
+      <p>
+        تتيح <b>CSS</b> تغيير لون النص <code>color</code> ولون الخلفية
+        <code>background-color</code> ولون الحدود <code>border-color</code>.
+        ويمكن كتابة الألوان بعدة صيغ مثل: بالاسم (مثل <code>red</code>)،
+        بالنظام السداسي Hex (مثل <code>#1e90ff</code>)، أو بنظام RGB.
+      </p>
+
+      <h3>رابعاً: التحكم في الخطوط والنصوص</h3>
+      <p>تساعد CSS على تحسين مظهر النصوص من خلال خصائص مثل:</p>
+      <ul>
+        <li><code>font-family</code>: لاختيار نوع الخط.</li>
+        <li><code>font-size</code>: لتحديد حجم الخط.</li>
+        <li><code>font-weight</code>: لجعل الخط عريضاً أو عادياً.</li>
+        <li><code>text-align</code>: لمحاذاة النص.</li>
+        <li><code>line-height</code>: للتحكم في المسافة بين الأسطر.</li>
+      </ul>
+
+      <h3>خامساً: المسافات والإطارات وتنسيق الصناديق</h3>
+      <p>
+        تعامل <b>CSS</b> مع كل عنصر في الصفحة على أنه صندوق مستطيل، ويسمى ذلك
+        <strong>"نموذج الصندوق" (Box Model)</strong>، ويتكون من:
+      </p>
+      <ol>
+        <li><strong>المحتوى (Content):</strong> النص أو الصورة نفسها.</li>
+        <li>
+          <strong>الحشو (Padding):</strong> المسافة بين المحتوى والإطار.
+        </li>
+        <li><strong>الإطار (Border):</strong> الخط المحيط بالعنصر.</li>
+        <li>
+          <strong>الهامش (Margin):</strong> المسافة بين العنصر والعناصر
+          المجاورة.
+        </li>
+      </ol>
+
+      <h3>سادساً: ترتيب العناصر والتصميم المتجاوب</h3>
+      <p>
+        من أهم إمكانات <b>CSS</b> الحديثة القدرة على ترتيب العناصر في الصفحة
+        باستخدام أدوات مثل:
+      </p>
+      <ul>
+        <li>
+          <strong>Flexbox:</strong> لترتيب العناصر في صف أو عمود بسهولة.
+        </li>
+        <li><strong>Grid:</strong> لبناء تخطيطات معقدة على شكل شبكة.</li>
+        <li>
+          <strong>Media Queries:</strong> لتغيير التصميم حسب حجم الشاشة
+          (التصميم المتجاوب Responsive Design).
+        </li>
+      </ul>
+
+      <h3>سابعاً: التأثيرات والحركة</h3>
+      <p>
+        تستطيع <b>CSS</b> إضافة لمسات تفاعلية مثل تغيير لون الزر عند مرور
+        المؤشر فوقه باستخدام <code>:hover</code>، أو جعل التغيير تدريجياً
+        وسلساً باستخدام <code>transition</code>.
+      </p>
+
+      <h3>ثامناً: مثال متكامل على الفرق الذي تصنعه CSS</h3>
+      <p>
+        عند كتابة وسم زر عادي مثل
+        <code>&lt;button&gt;اشترك الآن&lt;/button&gt;</code> بدون
+        <b>CSS</b> يظهر زراً رمادياً صغيراً، بينما إضافة حشو وزوايا مستديرة
+        وألوان تتفاعل مع المؤشر تحوله إلى زر جذاب يشجع الزائر على التفاعل.
+      </p>
+
+      <h3>فوائد استخدام CSS</h3>
+      <ul>
+        <li>فصل التصميم عن المحتوى مما يسهل الصيانة والتعديل.</li>
+        <li>
+          توفير الوقت والجهد بكتابة التنسيق مرة واحدة وتطبيقه على كافة
+          الصفحات.
+        </li>
+        <li>تسريع تحميل الصفحات لأن ملف CSS يُخزن مؤقتاً في المتصفح.</li>
+        <li>دعم جميع أحجام الشاشات والأجهزة.</li>
+      </ul>
+    </section>
+
+    <!-- 3. المراجع  -->
+    <section>
+      <h2>المراجع</h2>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">
+            موقع MDN Web Docs - "CSS: Cascading Style Sheets"
+          </a>
+        </li>
+        <li>
+          <a href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener noreferrer">
+            موقع W3C - "Cascading Style Sheets"
+          </a>
+        </li>
+        <li>
+          <a href="https://web.dev/learn/css" target="_blank" rel="noopener noreferrer">
+            موقع web.dev من Google - "Learn CSS"
+          </a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/css/" target="_blank" rel="noopener noreferrer">
+            موقع W3Schools - "CSS Tutorial"
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+
+</html>
